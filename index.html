@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- 
+    Survey Form by Raisa Kemppainen
+    Codepen.io/raisakemppainen/pen/QWpyQGr
+    Free for personal use.
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato&display=swap" rel="stylesheet">
+    <title>Survey form</title>
+</head>
+
+<body>
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header>
+            <h1 id="title">Raisa Kemppainen </h1>
+            <p id="survey-title">Survey Form</p>
+            <p id="description">Thank you for taking time to help me improve my portfolio</p>
+        </header>
+
+        <!-- Main -->
+        <main>
+
+            <!-- Form -->
+            <form id="survey-form">
+
+                <!-- Personal information -->
+                <fieldset>
+                    <legend>Personal information</legend>
+
+                    <!-- Name required -->
+                    <div class="form-group">
+                        <label id="name-label" for="name">Name</label>
+                        <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name"
+                            required>
+                    </div>
+
+                    <!-- Email required -->
+                    <div class="form-group">
+                        <label id="email-label" for="email">Email</label>
+                        <input id="email" type="email" name="email" class="form-control" placeholder="Enter your Email"
+                            required>
+                    </div>
+
+                    <!-- Age optional min 10 max 99 -->
+                    <div class="form-group">
+                        <label id="number-label" for="age">Age <span class="clue">(optional)</span></label>
+                        <input id="number" type="number" name="age" min="10" max="99" class="form-control"
+                            placeholder="Age">
+                    </div>
+                </fieldset>
+
+                <!-- Users opionion on the portfolio-->
+                <fieldset>
+                    <legend>Your opinion on my portfolio</legend>
+
+                    <!-- Dropdown list with options for best portfolio page-->
+                    <div class="form-group">
+                        <p>Which page is your favorite on the site?</p>
+
+                        <select name="portfolio-page" id="dropdown">
+                            <option value="tribute">Tribute page</option>
+                            <option value="survey">Survey page</option>
+                            <option value="landing">Landing page</option>
+                            <option value="dokumentation">Technical dokumentation page</option>
+                            <option value="portfolio">Personal portfolio page</option>
+                        </select>
+                    </div>
+
+                    <!-- Textarea for opinion on favorite page -->
+                    <div class="form-group">
+                        <p>What is your favorite futures on that page?</p>
+                        <textarea id="opinion" class="input-textarea" name="opinion"
+                            placeholder="Enter your opinion here..."></textarea>
+                    </div>
+
+                    <!--- Checkboxes for improvement -->
+                    <div class="form-group">
+                        <p>What would you like to see improved on the less favorite pages? <span class="clue">(Check all
+                                that apply)</span></p>
+
+                        <label for="navigation"><input type="checkbox" name="improvement" id="navigation"
+                                value="navigation" class="input-checkbox">Navigation</label>
+                        <label for="font"><input type="checkbox" name="improvement" id="font" value="font"
+                                class="input-checkbox">Font</label>
+                        <label for="colors"><input type="checkbox" name="improvement" id="colors" value="colors"
+                                class="input-checkbox">Colors</label>
+                        <label for="images"><input type="checkbox" name="improvement" id="images" value="images"
+                                class="input-checkbox">Images</label>
+                        <label for="layout"><input type="checkbox" name="improvement" id="layout" value="layout"
+                                class="input-checkbox">Layout</label>
+                        <label for="readabillity"><input type="checkbox" name="improvement" id="readabillity"
+                                value="readabillity" class="input-checkbox">Readabillity</label>
+                        <label for="other"><input type="checkbox" name="improvement" id="other" value="other"
+                                class="input-checkbox">Other</label>
+                        <input type="text" name="other" id="other" placeholder="give an example" value="example">
+
+                    </div>
+
+                    <!-- Radio button-group for recommendation of portfolio -->
+                    <div class="form-group">
+                        <p>Would you recommend my portfolio to anyone?</p>
+
+                        <label for="definitely"><input id="definitely" type="radio" class="input-radio"
+                                value="definitely" name="recommend" checked>Definitely</label>
+                        <label for="maybe"><input id="maybe" type="radio" class="input-radio" value="maybe"
+                                name="recommend">Maybe</label>
+                        <label for="not_sure"><input id="not-sure" type="radio" class="input-radio" value="not-sure"
+                                name="recommend">Not
+                            sure</label>
+                    </div>
+                </fieldset>
+
+                <!-- Last comments and submit button for the form -->
+                <fieldset>
+                    <legend>Comments and submit</legend>
+
+                    <!-- Textfield for comments -->
+                    <div class="form-group">
+                        <p>Any comments or suggestions?</p>
+
+                        <textarea name="comment" id="comments" class="input-textarea"
+                            placeholder="Enter your comment here..."></textarea>
+                    </div>
+
+                    <!-- Submit button for form -->
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="submit-button">Submit</button>
+                    </div>
+                </fieldset>
+
+            </form>
+        </main>
+
+
+        <!-- Footer -->
+        <footer>
+            <p class="footer-referenc">References: <a id="freecodecamp"
+                    href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form"
+                    target="_blank">FreeCodeCamp</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+<!--- Script for running test for freecodecamp projects -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
