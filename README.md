@@ -1,2 +1,5 @@
 # survey_form
-survey_form in html css from FreeCodeCamp
+survey form in html and css from FreeCodeCamp
+
+code free to use for personal use. 
+Credit: @RaisaKemppainen
