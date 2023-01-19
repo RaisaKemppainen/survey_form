@@ -1,9 +1,9 @@
 html,
 body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -14,10 +14,10 @@ body {
 }
 
 .wrapper {
-    background-color:whitesmoke;
+    background-color: #e7e0ec;
     align-self: center;
     border-radius: 35px 35px 0px 0px;
-    box-shadow: 0px 0px 3px 2px rgba(221,180,221,0.24);
+    box-shadow: 0px 0px 3px 2px rgb(255 255 255 / 49%);
     outline-offset: 0.2rem;
     padding: 1rem;
     margin: 2rem;
@@ -27,7 +27,7 @@ body {
     position: relative;
     text-align: center;
     font-size: 2.25rem;
-    color: #016b83;
+    color: #1f1f1f;
     font-family: 'Anton', sans-serif;
     letter-spacing: 1px;
     margin: 0px;
@@ -62,8 +62,8 @@ fieldset {
     margin: 1rem;
     padding: 1rem;
     border-radius: 10px 10px 0px 0px;
-    border: 1px solid hsl(16, 78%, 60%);
-    background-color: hsl(16, 78%, 63%);
+    border:1px solid hsl(315deg 100% 99%);
+    background-color: #fffbfe;
 }
 .form-group {
     display: block;
@@ -96,7 +96,7 @@ label {
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
+    border:  1px solid #e7e0ec;
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -132,3 +132,7 @@ textarea {
 footer {
     margin: 1rem;
 }
+
+input[type=radio] {
+            accent-color: purple;
+        }
